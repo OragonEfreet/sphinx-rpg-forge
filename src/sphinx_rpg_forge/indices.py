@@ -8,22 +8,19 @@ class RuleSetIndex(Index):
     shortname = 'Ruleset'
 
     def generate(self, docnames=None):
-        print("generating ze index")
         content = defaultdict(list)
 
         # Sort the list of rulesets in alphabetical order of their display
         # names, lower().
         rulesets = sorted(self.domain.get_rulesets(),
-                          key=lambda rs: rs.display_name)
+                          key=lambda rs: rs.dispname)
 
         # Generate the index. Use first letter of the rulesets, lower(), as key
         # to group things
         #
         # name,subtype,docname,anchor,extra,qualifier,description
-        for name, display_name, docname, anchor in rulesets:
-            content[display_name[0].lower()].append(
-                (display_name, 0, docname, anchor, '', '', '')
-            )
+        for rs in rulesets:
+            content[rs.dispname[0].lower()].append(rs.index_entry())
 
         content = sorted(content.items())
         return content, True

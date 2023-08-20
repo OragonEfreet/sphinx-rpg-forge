@@ -28,9 +28,7 @@ class ForgeDomain(Domain):
         'roll': DummyRole(),
     }
     initial_data = {
-        # An {str: str} dict where they key identified a ruleset and
-        # the value is a display name for the ruleset
-        'rulesets': {},
+        'objects': [],  # A flat list of all the objects
     }
 
     def get_full_qualified_name(self, node):
@@ -39,16 +37,19 @@ class ForgeDomain(Domain):
     def get_objects(self):
         # TODO
         yield from []
+        # yield from self.data['objects']
 
     def get_rulesets(self):
-        yield from self.data['rulesets'].values()
+        for obj in self.data['objects']:
+            if obj.typ == 'RuleSet':
+                yield obj
 
     def resolve_xref(self, env, fromdocname, builder, typ, target, node, contnode):
         match typ:
             case 'ruleset':
-                if found := self.data['rulesets'].get(target, None):
-                    return make_refnode(builder, fromdocname, found.docname, found.anchor, contnode, found.docname)
-                return None
+                for rs in self.get_rulesets():
+                    if rs.name == target:
+                        return make_refnode(builder, fromdocname, rs.docname, rs.anchor, contnode, rs.docname)
 
                 # print('====== RESOLVE =====')
                 # print(f'    self: {self}')
@@ -70,9 +71,6 @@ class ForgeDomain(Domain):
         Returns the name for the ruleset"""
         name = signature
         anchor = f'ruleset-{signature}'
-
-        assert (signature not in self.data['rulesets'])
-        self.data['rulesets'][signature] = RuleSet(
-            name, dispname, self.env.docname, anchor)
-
+        self.data['objects'].append(
+            RuleSet(name, dispname, self.env.docname, anchor))
         return name
