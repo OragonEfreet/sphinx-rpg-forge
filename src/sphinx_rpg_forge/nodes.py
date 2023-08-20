@@ -1,19 +1,18 @@
 from docutils import nodes
 
 
-class ruleset(nodes.Admonition, nodes.Element):
+class RuleSetNode(nodes.General, nodes.Element):
     pass
 
 
-def visit_ruleset_node(self, node):
-    print('visit_ruleset_node')
-    self.visit_admonition(node)
-
-
-def depart_ruleset_node(self, node):
-    print('depart_ruleset_node')
-    self.depart_admonition(node)
+def process_ruleset_nodes(app, doctree, fromdocname):
+    # This first version just replaces every RuleSetNode
+    # with something else.
+    for node in doctree.findall(RuleSetNode):
+        node.replace_self([nodes.paragraph(text=node.ruleset)])
 
 
 def setup(app):
-    app.add_node(ruleset, html=(visit_ruleset_node, depart_ruleset_node))
+    app.add_node(RuleSetNode)
+
+    app.connect('doctree-resolved', process_ruleset_nodes)
