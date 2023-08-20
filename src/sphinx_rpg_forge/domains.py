@@ -46,16 +46,13 @@ class ForgeDomain(Domain):
         match typ:
             case "ruleset":
                 try:
-                    rs = next(rs for rs in self.get_rulesets() if rs.name == target)
+                    rs = next(rs for rs in self.get_rulesets() if rs.signature == target)
                     return rs.make_refnode(builder, fromdocname, contnode)
                 except StopIteration:
                     pass
             case "char":
-                # print(sum(1 for _ in self.get_characters()))
-                for c in self.get_characters():
-                    print(c.dispname)
                 try:
-                    rs = next(rs for rs in self.get_characters() if rs.name == target)
+                    rs = next(rs for rs in self.get_characters() if rs.signature == target)
                     return rs.make_refnode(builder, fromdocname, contnode)
                 except StopIteration:
                     pass
@@ -75,14 +72,14 @@ class ForgeDomain(Domain):
                 return None
         return None
 
-    def add_object(self, typ, signature, dispname):
+    def add_object(self, typ, signature):
         """Add a new object of the given type to the domain
-        Returns the computed unique name for the object"""
-        name = signature
+        Returns the anchor to the object"""
+        name = f"{typ}.{signature}"
         anchor = f"{typ}-{signature}"
         self.data["objects"].append(
-            ForgeObject(name, dispname, typ, self.env.docname, anchor)
+            ForgeObject(name, signature, typ, self.env.docname, anchor)
         )
-        return name
+        return anchor
 
 

@@ -12,13 +12,13 @@ class RuleSetIndex(Index):
 
         # Sort the list of rulesets in alphabetical order of their display
         # names, lower().
-        rulesets = sorted(self.domain.get_rulesets(), key=lambda rs: rs.dispname)
+        rulesets = sorted(self.domain.get_rulesets(), key=lambda rs: rs.signature)
 
         # Generate the index. Use first letter of the rulesets, lower(), as key
         # to group things:
         # name,subtype,docname,anchor,extra,qualifier,description
         for rs in rulesets:
-            content[rs.dispname[0].lower()].append(rs.index_entry())
+            content[rs.signature[0].lower()].append(rs.index_entry())
 
         content = sorted(content.items())
         return content, True

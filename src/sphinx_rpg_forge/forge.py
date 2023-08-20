@@ -7,23 +7,24 @@ class ForgeObject:
         "RuleSet": "ruleset",
     }
 
-    def __init__(self, name, dispname, typ, docname, anchor):
+    def __init__(self, name, signature, typ, docname, anchor):
         self.name = name
-        self.dispname = dispname
+        self.signature = signature
         self.typ = typ
         self.docname = docname
         self.anchor = anchor
 
     def description(self):
-        return (self.name, self.dispname, self.typ, self.docname, self.anchor, 0)
+        return (self.name, self.signature, self.typ, self.docname, self.anchor, 0)
 
     def index_entry(self):
-        return (self.dispname, 0, self.docname, self.anchor, "", "", "")
+        return (self.signature, 0, self.docname, self.anchor, "", "", "")
 
     def make_refnode(self, builder, fromdocname, contnode):
-        return make_refnode(
+        print(contnode.pformat())
+        res = make_refnode(
             builder, fromdocname, self.docname, self.anchor, contnode, self.docname
         )
+        print(res.pformat())
+        return res
 
-    def reftype(self):
-        return ForgeObject.typ_to_ref.get(self.typ, "ref")

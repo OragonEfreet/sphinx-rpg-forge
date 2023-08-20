@@ -10,38 +10,33 @@ import re
 
 class RuleSetDirective(ObjectDescription):
     has_content = False
-    final_argument_whitespace = False
     required_arguments = 1
     option_spec = {
-        "title": directives.unchanged_required,
         "noindex": directives.flag,
     }
 
     def handle_signature(self, sig, signode):
-        self.dispname = self.options.get("title", sig)
-        signode += addnodes.desc_name(text=self.dispname)
+        signode += addnodes.desc_name(text=sig)
         return sig
 
     def add_target_and_index(self, name_cls, sig, signode):
         signode["ids"].append(
-            self.env.get_domain(RPG_DOMAIN).add_object("RuleSet", sig, self.dispname)
+            self.env.get_domain(RPG_DOMAIN).add_object("RuleSet", sig)
         )
-
 
 class CharacterDirective(ObjectDescription):
     has_content = False
     final_argument_whitespace = False
     required_arguments = 1
     option_spec = {
-        "name": directives.unchanged_required,
+        "noindex": directives.flag,
     }
 
     def handle_signature(self, sig, signode):
-        self.name = self.options.get("name", sig)
-        signode += addnodes.desc_name(text=self.name)
+        signode += addnodes.desc_name(text=sig)
         return sig
 
     def add_target_and_index(self, name_cls, sig, signode):
         signode["ids"].append(
-            self.env.get_domain(RPG_DOMAIN).add_object("Character", sig, self.name)
+            self.env.get_domain(RPG_DOMAIN).add_object("Character", sig)
         )

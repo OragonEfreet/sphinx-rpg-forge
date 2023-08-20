@@ -496,6 +496,5 @@ Expérience gagnée:
 - 800 xp à se partager
 - 25xp par joueur par prisonnier vivant après le rituel.
 
-.. rpg:character:: firion
-   :name: Firion
+.. rpg:character:: Firion
 
