@@ -6,8 +6,7 @@
 Sphinx RPG Forge
 ################
 
-# A Sphinx Docs extension for generating RPG scenarios
-
+A Sphinx Docs extension for generating RPG scenarios
 
 .. toctree::
    :maxdepth: 2

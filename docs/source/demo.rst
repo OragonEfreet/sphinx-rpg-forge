@@ -2,12 +2,11 @@
 Demonstration
 #############
 
-.. helloworld::
+.. toctree::
+   :hidden:
 
-Source Code
-###########
+   dnd5/intro
 
-Source code for the current page:
+:doc:`dnd5/intro`
+    The very DND scenario I'm working on to build this extension from.
 
-.. literalinclude:: demo.rst
-   :language: rst

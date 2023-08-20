@@ -7,7 +7,7 @@ name = "sphinx-rpg-forge"
 authors = [
     {name = "Kevin d'Orange", email = "kevin.dorange@protonmail.com"},
 ]
-authors = [
+maintainers = [
     {name = "Kevin d'Orange", email = "kevin.dorange@protonmail.com"},
 ]
 description = "A Sphinx Docs extension for generating RPG scenarios"
@@ -31,7 +31,7 @@ classifiers = [
     "Topic :: Software Development :: Documentation",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-dependencies = ["sphinx==4.5.0"]
+dependencies = ["sphinx"]
 dynamic = ["version"]
 
 [project.urls]
