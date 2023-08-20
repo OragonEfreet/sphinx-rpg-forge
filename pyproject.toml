@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sphinx-rpg-forge"
+authors = [
+    {name = "Kevin d'Orange", email = "kevin.dorange@protonmail.com"},
+]
+authors = [
+    {name = "Kevin d'Orange", email = "kevin.dorange@protonmail.com"},
+]
+description = "A Sphinx Docs extension for generating RPG scenarios"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Proprietary"}
+keywords = ['sphinx', 'sphinx-extension', 'rpg', 'role', 'game', 'book']
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Plugins",
+    "Framework :: Sphinx",
+    "Framework :: Sphinx :: Extension",
+    "Intended Audience :: Developers",
+    "License :: Other/Proprietary License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Documentation",
+    "Topic :: Documentation :: Sphinx",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = ["sphinx==4.5.0"]
+dynamic = ["version"]
+
+[project.urls]
+Repository = "https://github.com/OragonEfreet/sphinx-rpg-forge"
+
+[tool.setuptools.dynamic]
+version = {attr = "sphinx_rpg_forge.__version__"}
+
+
