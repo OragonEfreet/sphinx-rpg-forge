@@ -2,6 +2,8 @@
 Les Gobelins de Harald
 ######################
 
+:rpg:ruleset:`Hello <dnd5>`
+
 A la frontière de l'Empire, le vilage de Harald est menacé par l'occupation récente de gobelins dans la forêt avoisinante.
 Trop occupée à défendre la frontière la garnison voisine n'a pas les moyens d'envoyer un détachement pour s'occuper des intrus.
 Elle fait alors appel à tout volontaire acceptant de se débarasser de la menace intérieure.

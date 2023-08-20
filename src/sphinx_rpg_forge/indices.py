@@ -19,15 +19,10 @@ class RuleSetIndex(Index):
         # Generate the index. Use first letter of the rulesets, lower(), as key
         # to group things
         #
-        # name,subtype,docname,anchor,extra,qualitifer,description
+        # name,subtype,docname,anchor,extra,qualifier,description
         for name, display_name, docname, anchor in rulesets:
             content[display_name[0].lower()].append(
-                (display_name,
-                 0,
-                 docname,
-                 anchor,
-                 docname,
-                 '', '')
+                (display_name, 0, docname, anchor, '', '', '')
             )
 
         content = sorted(content.items())

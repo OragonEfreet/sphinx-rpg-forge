@@ -23,5 +23,5 @@ class RuleSetDirective(ObjectDescription):
         return sig
 
     def add_target_and_index(self, name_cls, sig, signode):
-        signode['ids'].append(f'ruleset-{sig}')
-        self.env.get_domain(RPG_DOMAIN).add_ruleset(sig, self.dispname)
+        signode['ids'].append(self.env.get_domain(
+            RPG_DOMAIN).add_ruleset(sig, self.dispname))
