@@ -16,8 +16,7 @@ class RuleSetIndex(Index):
                           key=lambda rs: rs.dispname)
 
         # Generate the index. Use first letter of the rulesets, lower(), as key
-        # to group things
-        #
+        # to group things:
         # name,subtype,docname,anchor,extra,qualifier,description
         for rs in rulesets:
             content[rs.dispname[0].lower()].append(rs.index_entry())
