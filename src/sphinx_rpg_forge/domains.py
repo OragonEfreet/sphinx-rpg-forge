@@ -8,47 +8,57 @@ from sphinx_rpg_forge.roles import *
 
 
 class ForgeDomain(Domain):
-
     name = RPG_DOMAIN
-    label = 'RPG Forge'
+    label = "RPG Forge"
 
     object_types = []
 
     directives = {
-        'ruleset': RuleSetDirective,
+        "ruleset": RuleSetDirective,
+        "character": CharacterDirective,
     }
     indices = {
         RuleSetIndex,
     }
     roles = {
-        'ruleset': XRefRole(),
-        'char': DummyRole(),
-        'carac': DummyRole(),
-        'roll': DummyRole(),
+        "ruleset": XRefRole(),
+        "char": XRefRole(),
+        "carac": DummyRole(),
+        "roll": DummyRole(),
     }
     initial_data = {
-        'objects': [],  # A flat list of all the objects
+        "objects": [],  # A flat list of all the objects
     }
 
     def get_full_qualified_name(self, node):
-        return f'rpg.forge.{node.arguments[0]}'
+        return f"rpg.forge.{node.arguments[0]}"
 
     def get_objects(self):
-        yield from [obj.description() for obj in self.data['objects']]
+        yield from [obj.description() for obj in self.data["objects"]]
 
     def get_rulesets(self):
-        yield from [obj for obj in self.data['objects'] if obj.typ == 'RuleSet']
+        yield from [obj for obj in self.data["objects"] if obj.typ == "RuleSet"]
+
+    def get_characters(self):
+        yield from [obj for obj in self.data["objects"] if obj.typ == "Character"]
 
     def resolve_xref(self, env, fromdocname, builder, typ, target, node, contnode):
-
         match typ:
-            case 'ruleset':
+            case "ruleset":
                 try:
                     rs = next(rs for rs in self.get_rulesets() if rs.name == target)
                     return rs.make_refnode(builder, fromdocname, contnode)
                 except StopIteration:
                     pass
-
+            case "char":
+                # print(sum(1 for _ in self.get_characters()))
+                for c in self.get_characters():
+                    print(c.dispname)
+                try:
+                    rs = next(rs for rs in self.get_characters() if rs.name == target)
+                    return rs.make_refnode(builder, fromdocname, contnode)
+                except StopIteration:
+                    pass
 
                 # print('====== RESOLVE =====')
                 # print(f'    self: {self}')
@@ -65,13 +75,14 @@ class ForgeDomain(Domain):
                 return None
         return None
 
-    def add_object(self, name, dispname, typ, docname, anchor):
-        self.data['objects'].append(ForgeObject(name, dispname, typ, docname, anchor))
-
-    def add_ruleset(self, signature, dispname):
-        """Add a new ruleset to the domain
-        Returns the name for the ruleset"""
-        name=signature
-        anchor=f'ruleset-{signature}'
-        self.add_object(name, dispname, 'RuleSet', self.env.docname, anchor)
+    def add_object(self, typ, signature, dispname):
+        """Add a new object of the given type to the domain
+        Returns the computed unique name for the object"""
+        name = signature
+        anchor = f"{typ}-{signature}"
+        self.data["objects"].append(
+            ForgeObject(name, dispname, typ, self.env.docname, anchor)
+        )
         return name
+
+

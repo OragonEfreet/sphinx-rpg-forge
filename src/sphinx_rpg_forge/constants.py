@@ -1,1 +1,1 @@
-RPG_DOMAIN = 'rpg'
+RPG_DOMAIN = "rpg"

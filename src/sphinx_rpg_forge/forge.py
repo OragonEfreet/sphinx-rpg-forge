@@ -1,13 +1,11 @@
 from collections import namedtuple
 from sphinx.util.nodes import make_refnode
 
+
 class ForgeObject:
-
     typ_to_ref = {
-        'RuleSet': 'ruleset',
+        "RuleSet": "ruleset",
     }
-
-
 
     def __init__(self, name, dispname, typ, docname, anchor):
         self.name = name
@@ -20,11 +18,12 @@ class ForgeObject:
         return (self.name, self.dispname, self.typ, self.docname, self.anchor, 0)
 
     def index_entry(self):
-        return (self.dispname, 0, self.docname, self.anchor, '', '', '')
+        return (self.dispname, 0, self.docname, self.anchor, "", "", "")
 
     def make_refnode(self, builder, fromdocname, contnode):
-        return make_refnode(builder, fromdocname, self.docname, self.anchor, contnode, self.docname)
+        return make_refnode(
+            builder, fromdocname, self.docname, self.anchor, contnode, self.docname
+        )
 
     def reftype(self):
-        return ForgeObject.typ_to_ref.get(self.typ, 'ref')
-
+        return ForgeObject.typ_to_ref.get(self.typ, "ref")

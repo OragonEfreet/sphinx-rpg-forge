@@ -15,4 +15,4 @@ def process_ruleset_nodes(app, doctree, fromdocname):
 def setup(app):
     app.add_node(RuleSetNode)
 
-    app.connect('doctree-resolved', process_ruleset_nodes)
+    app.connect("doctree-resolved", process_ruleset_nodes)

@@ -2,7 +2,7 @@
 Les Gobelins de Harald
 ######################
 
-:rpg:ruleset:`Hello <dnd5>`
+:rpg:ruleset:`dnd5`
 
 A la frontière de l'Empire, le vilage de Harald est menacé par l'occupation récente de gobelins dans la forêt avoisinante.
 Trop occupée à défendre la frontière la garnison voisine n'a pas les moyens d'envoyer un détachement pour s'occuper des intrus.
@@ -17,7 +17,7 @@ Résumé
 L'un des aventuriers était volontaire pour la mission et a organisé le groupe.
 C'est ensemble qu'ils arrivent au village de Harald.
 Les gobelins ne sont pas la menace finale de l'aventure.
-:rpg:char:`Firion`, un nécromant dont les intentions réelles sont inconnues des joueurs dans ce scénario, tente de devenir liche en préparant un rituel.
+:rpg:char:`firion`, un nécromant dont les intentions réelles sont inconnues des joueurs dans ce scénario, tente de devenir liche en préparant un rituel.
 Dans un grimoire qu'il a obtenu par hasard un jour, il découvrit un rituel de création de liche impliquant la consommation d'âmes.
 
 Les aventuriers ne découvriront la vraie menace qu'après avoir vaincu le chef gobelin.
@@ -495,3 +495,7 @@ Fin de l'aventure.
 Expérience gagnée:
 - 800 xp à se partager
 - 25xp par joueur par prisonnier vivant après le rituel.
+
+.. rpg:character:: firion
+   :name: Firion
+
