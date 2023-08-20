@@ -8,15 +8,16 @@ from sphinx_rpg_forge.nodes import RuleSetNode
 import re
 
 
-class RuleSetDirective(ObjectDescription):
+class ForgeObjectDescription(ObjectDescription):
     has_content = False
     required_arguments = 1
     option_spec = {
         "noindex": directives.flag,
+        "title": directives.unchanged_required,
     }
 
     def handle_signature(self, sig, signode):
-        signode += addnodes.desc_name(text=sig)
+        signode += addnodes.desc_name(text=self.options.get("title", sig))
         return sig
 
     def add_target_and_index(self, name_cls, sig, signode):
@@ -24,19 +25,17 @@ class RuleSetDirective(ObjectDescription):
             self.env.get_domain(RPG_DOMAIN).add_object("RuleSet", sig)
         )
 
-class CharacterDirective(ObjectDescription):
-    has_content = False
-    final_argument_whitespace = False
-    required_arguments = 1
-    option_spec = {
-        "noindex": directives.flag,
-    }
+    def get_object_type():
+        return "ForgeObject"
 
-    def handle_signature(self, sig, signode):
-        signode += addnodes.desc_name(text=sig)
-        return sig
 
-    def add_target_and_index(self, name_cls, sig, signode):
-        signode["ids"].append(
-            self.env.get_domain(RPG_DOMAIN).add_object("Character", sig)
-        )
+class RuleSetDirective(ForgeObjectDescription):
+    def get_object_type():
+        return "RuleSet"
+
+
+class CharacterDirective(ForgeObjectDescription):
+    has_content = True
+
+    def get_object_type():
+        return "Character"

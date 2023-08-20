@@ -46,13 +46,17 @@ class ForgeDomain(Domain):
         match typ:
             case "ruleset":
                 try:
-                    rs = next(rs for rs in self.get_rulesets() if rs.signature == target)
+                    rs = next(
+                        rs for rs in self.get_rulesets() if rs.signature == target
+                    )
                     return rs.make_refnode(builder, fromdocname, contnode)
                 except StopIteration:
                     pass
             case "char":
                 try:
-                    rs = next(rs for rs in self.get_characters() if rs.signature == target)
+                    rs = next(
+                        rs for rs in self.get_characters() if rs.signature == target
+                    )
                     return rs.make_refnode(builder, fromdocname, contnode)
                 except StopIteration:
                     pass
@@ -81,5 +85,3 @@ class ForgeDomain(Domain):
             ForgeObject(name, signature, typ, self.env.docname, anchor)
         )
         return anchor
-
-

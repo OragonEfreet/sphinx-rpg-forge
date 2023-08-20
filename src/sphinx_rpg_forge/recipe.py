@@ -132,7 +132,7 @@ class RecipeDomain(Domain):
             todocname = match[0][0]
             targ = match[0][1]
 
-            return make_refnode(builder, fromdocname, todocname, targ, contnode, targ)
+            pouet = make_refnode(builder, fromdocname, todocname, targ, contnode, targ)
         else:
             print("Awww, found nothing")
             return None

@@ -17,7 +17,7 @@ Résumé
 L'un des aventuriers était volontaire pour la mission et a organisé le groupe.
 C'est ensemble qu'ils arrivent au village de Harald.
 Les gobelins ne sont pas la menace finale de l'aventure.
-:rpg:char:`firion`, un nécromant dont les intentions réelles sont inconnues des joueurs dans ce scénario, tente de devenir liche en préparant un rituel.
+:rpg:char:`Firion`, un nécromant dont les intentions réelles sont inconnues des joueurs dans ce scénario, tente de devenir liche en préparant un rituel.
 Dans un grimoire qu'il a obtenu par hasard un jour, il découvrit un rituel de création de liche impliquant la consommation d'âmes.
 
 Les aventuriers ne découvriront la vraie menace qu'après avoir vaincu le chef gobelin.
@@ -497,4 +497,8 @@ Expérience gagnée:
 - 25xp par joueur par prisonnier vivant après le rituel.
 
 .. rpg:character:: Firion
+   
+   Un individu au tempérament hautain et à la préférence pour la solitude, affichant une fierté discrète qui le maintient en retrait des conversations et des interactions sociales.
+   Sa posture laisse entrevoir une confiance intérieure indéniable.
 
+   :con: 5

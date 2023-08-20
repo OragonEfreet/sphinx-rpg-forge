@@ -21,10 +21,11 @@ class ForgeObject:
         return (self.signature, 0, self.docname, self.anchor, "", "", "")
 
     def make_refnode(self, builder, fromdocname, contnode):
-        print(contnode.pformat())
-        res = make_refnode(
-            builder, fromdocname, self.docname, self.anchor, contnode, self.docname
+        return make_refnode(
+            builder,
+            fromdocname,
+            self.docname,
+            self.anchor,
+            contnode,
+            self.docname,
         )
-        print(res.pformat())
-        return res
-
