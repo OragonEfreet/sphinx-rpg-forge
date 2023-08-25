@@ -18,7 +18,7 @@ class ForgeDomain(Domain):
         "character": CharacterDirective,
     }
     indices = {
-        RuleSetIndex,
+        ForgeIndex,
     }
     roles = {
         "ruleset": XRefRole(),
@@ -28,6 +28,7 @@ class ForgeDomain(Domain):
     }
     initial_data = {
         "objects": [],  # A flat list of all the objects
+        "current_ruleset": {},
     }
 
     def get_full_qualified_name(self, node):
@@ -36,18 +37,21 @@ class ForgeDomain(Domain):
     def get_objects(self):
         yield from [obj.description() for obj in self.data["objects"]]
 
-    def get_rulesets(self):
-        yield from [obj for obj in self.data["objects"] if obj.typ == "RuleSet"]
+    def get(self, objtype):
+        yield from [obj for obj in self.data["objects"] if obj.typ == objtype]
 
-    def get_characters(self):
-        yield from [obj for obj in self.data["objects"] if obj.typ == "Character"]
+    def current_ruleset(self, docname):
+        return self.data["current_ruleset"].get(docname, None)
+
+    def set_current_ruleset(self, docname, ruleset):
+        self.data["current_ruleset"][docname] = ruleset
 
     def resolve_xref(self, env, fromdocname, builder, typ, target, node, contnode):
         match typ:
             case "ruleset":
                 try:
                     rs = next(
-                        rs for rs in self.get_rulesets() if rs.signature == target
+                        rs for rs in self.get(RuleSetDirective.get_object_type()) if rs.signature == target
                     )
                     return rs.make_refnode(builder, fromdocname, contnode)
                 except StopIteration:
@@ -55,33 +59,21 @@ class ForgeDomain(Domain):
             case "char":
                 try:
                     rs = next(
-                        rs for rs in self.get_characters() if rs.signature == target
+                        rs for rs in self.get(CharacterDirective.get_object_type()) if rs.signature == target
                     )
                     return rs.make_refnode(builder, fromdocname, contnode)
                 except StopIteration:
                     pass
 
-                # print('====== RESOLVE =====')
-                # print(f'    self: {self}')
-                # print(f'    env: {env}')
-                # print(f'    fromdocname: {fromdocname}')
-                # print(f'    builder: {builder}')
-                # print(f'    typ: {typ}')
-                # print(f'    target: {target}')
-                # print(f'    node: {node}')
-                # print(f'    contnode: {contnode}')
-                # print('====================')
-
             case _:
                 return None
         return None
 
-    def add_object(self, typ, signature):
+    def add_object(self, typ, signature, ruleset):
         """Add a new object of the given type to the domain
         Returns the anchor to the object"""
         name = f"{typ}.{signature}"
         anchor = f"{typ}-{signature}"
-        self.data["objects"].append(
-            ForgeObject(name, signature, typ, self.env.docname, anchor)
-        )
-        return anchor
+        new_object = ForgeObject(name, signature, typ, self.env.docname, anchor, ruleset)
+        self.data["objects"].append(new_object)
+        return new_object

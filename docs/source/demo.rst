@@ -2,6 +2,8 @@
 Demonstration
 #############
 
+:rpg:ruleset:`dnd5`
+
 .. toctree::
    :hidden:
 
@@ -10,6 +12,6 @@ Demonstration
 :doc:`dnd5/intro`
     The very DND scenario I'm working on to build this extension from.
 
-:ref:`rpg-ruleset`
+:ref:`rpg-forge`
     Index of all the Rule Sets available
 

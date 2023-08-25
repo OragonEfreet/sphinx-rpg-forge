@@ -2,7 +2,6 @@
 Les Gobelins de Harald
 ######################
 
-:rpg:ruleset:`dnd5`
 
 A la frontière de l'Empire, le vilage de Harald est menacé par l'occupation récente de gobelins dans la forêt avoisinante.
 Trop occupée à défendre la frontière la garnison voisine n'a pas les moyens d'envoyer un détachement pour s'occuper des intrus.
@@ -76,7 +75,16 @@ La Maison de Ville
 C'est le nom donné au domicile du représentant Impérial qui vit ici.
 Il s'agit d'un nain appelé :rpg:char:`Boffre`
 Complètement dépassé par les événements, il est traumatisé à l'idée d'endosser la responsabilité de l'enlèvement.
+
 C'est lui qui a lancé l'appel à volontaires et il sera capable d'accepter toute aide sans discuter.
+
+.. rpg:character:: Boffre
+   :ruleset: Dungeons & Dragons 5
+
+   Bah.. un nain
+   
+
+   :con: 5
 
 Déroulement
 -----------
@@ -431,6 +439,14 @@ Pris de peur il s'enfuit dans la cellule en **8**.
 Les aventuriers arrivent sur une grande pièce (12/15m) remplie d'une lumière mais ils ne parviennent pas à identifier la source.
 Au fond de la pièce, face à la porte, le chat est acculé au mur, terrifié.
 
+.. rpg:character:: Firion
+   :ruleset: Dungeons & Dragons 5
+   
+   Un individu au tempérament hautain et à la préférence pour la solitude, affichant une fierté discrète qui le maintient en retrait des conversations et des interactions sociales.
+   Sa posture laisse entrevoir une confiance intérieure indéniable.
+
+   :con: 5
+
 ### 1
 
 **Lorant** est étalé contre le mur, inconscient.
@@ -496,9 +512,3 @@ Expérience gagnée:
 - 800 xp à se partager
 - 25xp par joueur par prisonnier vivant après le rituel.
 
-.. rpg:character:: Firion
-   
-   Un individu au tempérament hautain et à la préférence pour la solitude, affichant une fierté discrète qui le maintient en retrait des conversations et des interactions sociales.
-   Sa posture laisse entrevoir une confiance intérieure indéniable.
-
-   :con: 5
