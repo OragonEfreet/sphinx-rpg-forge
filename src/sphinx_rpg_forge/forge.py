@@ -18,6 +18,9 @@ class ForgeObject:
     def description(self):
         return (self.name, self.signature, self.typ, self.docname, self.anchor, 0)
 
+    def __repr__(self):
+        return f"{self.typ}: '{self.signature}' [{self.ruleset}]"
+
     def make_refnode(self, builder, fromdocname, contnode):
         return make_refnode(
             builder,

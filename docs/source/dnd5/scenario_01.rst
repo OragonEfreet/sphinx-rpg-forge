@@ -2,6 +2,9 @@
 Les Gobelins de Harald
 ######################
 
+.. rpg:ruleset:: Dungeons & Dragons 5
+   :noindex:
+
 
 A la frontière de l'Empire, le vilage de Harald est menacé par l'occupation récente de gobelins dans la forêt avoisinante.
 Trop occupée à défendre la frontière la garnison voisine n'a pas les moyens d'envoyer un détachement pour s'occuper des intrus.
@@ -75,14 +78,19 @@ La Maison de Ville
 C'est le nom donné au domicile du représentant Impérial qui vit ici.
 Il s'agit d'un nain appelé :rpg:char:`Boffre`
 Complètement dépassé par les événements, il est traumatisé à l'idée d'endosser la responsabilité de l'enlèvement.
-
 C'est lui qui a lancé l'appel à volontaires et il sera capable d'accepter toute aide sans discuter.
 
+
+.. rpg:character:: Firion
+   
+   Un individu au tempérament hautain et à la préférence pour la solitude, affichant une fierté discrète qui le maintient en retrait des conversations et des interactions sociales.
+   Sa posture laisse entrevoir une confiance intérieure indéniable.
+
+   :con: 5
+
 .. rpg:character:: Boffre
-   :ruleset: Dungeons & Dragons 5
 
    Bah.. un nain
-   
 
    :con: 5
 
@@ -222,7 +230,8 @@ Si les Aventuriers se reposent:
     - Sur la route, une rencontre systématique avec un gobelin, par heure, sera faite
     - En dehors de la route, une rencontre aléatoire sur (`d20=>18`) `TRA0` est possible
 
-## LORANT ##
+Lorant
+------
 
 A tout moment durant la traversée de la forêt, les aventuriers entendent des bruits.
 Un test de Sagesse (Perception) leur permet di'dentifier les bruits comme celui d'un combat.
@@ -235,14 +244,14 @@ Si les aventuriers ne souhaitent pas aider **Lorant**, ils continuent leur chemi
 
 Si les aventuriers aident **Lorant** il les remercie à la fin du combat puis leur proposent son aide.
 
-### Si Les aventuriers acceptent le compagnon
+.. rubric:: Si Les aventuriers acceptent le compagnon
 
 **Lorant** est un Clerc de niveau 3.
 Il sera d'une grande utilité durant les combats.
 Après avoir discuté de l'offre un gobelin arrive en renfort tardif.
 D'un seul coup **Lorant** se retourne, et mu par un réflexe de peur il tue la créature en un coup.
 
-### Si les aventuriers refusent **Lorant**
+.. rubric:: Si les aventuriers refusent **Lorant**
 
 **Lorant** est déçu et un malaise se sent dans sa voix.
 Mais il part tout de même vers le village gobelin.
@@ -250,7 +259,8 @@ Les aventuriers ne peuvent malheureusement le suivre puisqu'au même moment, ven
 Une fois la rencontre terminée les aventuriers ne voient **Lorant** nulle part, ce dernier ayant pris bien trop d'avance.
 
 
-## L'ANTRE DES GOBELINS ##
+l'Antre des Gobelins
+====================
 
 Le village gobelin est à peine plus qu'un campement de clairière.
 Il est composé de trois grandes tentes faites de peaux diverses.
@@ -263,7 +273,7 @@ A l'ouest le chemin semble continuer, s'enfonçant dans la forêt
 
 La configuration dépend de la présence ou non de **Lorant** au sein du groupe.
 
-### **Lorant** fait partie du groupe ###
+.. rubric:: **Lorant** fait partie du groupe
 
 Si **Lorant** fait partie du groupe, les gobelins sont au complet.
 
@@ -296,7 +306,7 @@ Si les aventuriers en demandent plus, le gobelin peut leur donner les informatio
 - Il s'apprête à faire quelque chose avec les âmes des humains
 Si les aventuriers laissent le gobelin partir, il s'enfuit et disparaît dans la forêt.
 
-### **Lorant** ne fait pas partie du groupe ###
+.. rubric:: **Lorant** ne fait pas partie du groupe
 
 Si **Lorant** a devancé le groupe.
 
@@ -323,7 +333,8 @@ Si les aventuriers en demandent plus, le gobelin peut leur donner les informatio
 - Il s'apprête à faire quelque chose avec les âmes des humains
 Si les aventuriers laissent le gobelin partir, il s'enfuit et disparaît dans la forêt.
 
-## L'ENTRÉE DU DONJON ##
+L'Entrée du Donjon
+==================
 
 Au bout de vingt minutes de marche sans aucune rencontre quelque, les arbres s'éclaircicent pour laisser place à une petite colline surmontées de ruines.
 
@@ -338,7 +349,8 @@ Si les aventuriers décident de forcer la porte, le gobelin derrière recevras l
 
 Si **Lorant** n'est pas avec les aventuriers, la porte de bois a été dégondée avec violence et le gobelin git au sol, assomé.
 
-## LE DONJON ##
+Le Donjon
+=========
 
 Se reporter à la carte pour la description du terrain.
 
@@ -347,7 +359,7 @@ Certains endroit sont bloqués par des éboulis.
 
 Points d'intérêts:
 
-### 1
+.. rubric:: 1
 
 Une table et un tabouret en bois solides. La table est marquée par le temps et les coups de couteau. 
 
@@ -359,12 +371,12 @@ La viande peut être consommée. Malgré un goût très fort elle ne semble pas 
 Si **Lorant** n'est pas avec le groupe.
 Sur la table une assiette de sale, mais vidée récemment, repose à côté d'une dague.
 
-### 2, 3, 7
+.. rubric:: 2, 3, 7
 
 Un aventurier mort.
 On peut y récupérer des équipements.
 
-### 4
+.. rubric:: 4
 
 Rencontre:
 
@@ -380,7 +392,7 @@ Si **Lorant** ne fait pas partie du groupe, deux zombies tournent le dos au grou
 La rencontre avec les deux zombies peut commencer.
 La surprise est possible.
 
-### 5
+.. rubric:: 5
 
 Les prisonniers sont là.
 Trois cages sont vides.
@@ -392,7 +404,7 @@ Les aventuriers peuvent discuter avec les prisonniers et apprennent ceci :
 - Il y a une vingtaine de minutes, **Firion** a pris trois personnes avec lui sans expliquer pourquoi.
 - Les gobelins sont mauvais mais pas cruels.
 
-### 6
+.. rubric:: 6
 
 Un cadavre est attaché par la cheville et une chaine reliée au fond du mur de la cellule.
 Si les aventuriers s'approchent, le cadavre attrape le pied du plus proche et tente de le renverser (Sauvegarde Dex 10).
@@ -400,7 +412,7 @@ Un autre sort de l'ombre et s'apprête à attaquer à son tour.
 
 Au début de cette rencontre le premier zombie et potentiellement un aventurier sont à terre.
 
-### 8
+.. rubric:: 8
 
 Un passage est caché sous le lit.
 Il mène à l'ancienne salle des pièces à conviction, les objets confisqués aux anciens prisonniers.
@@ -412,52 +424,45 @@ En fouillant les caisses et les lieux, les aventuriers peuvent quand même trouv
 - Une épée de fer
 - Une vieille cape miteuse mais encore utilisable.
 
-### 9
+.. rubric:: 9
 
 La porte est bloquée par des débris et un bois gonflé.
 Pour l'ouvrir il faudra la forcer Force DD 20.
 
-### 10
+.. rubric:: 10
 
 Le troisième gobelin mort gît au sol.
 
-### 11
+.. rubric:: 11
 
 La porte est défoncée.
 
-### 12
+.. rubric:: 12
 
 Voir partie suivante.
 
-### 13
+.. rubric:: 13
 
 Un chat noir au pinceau blanc apparait devant les aventuriers.
 Pris de peur il s'enfuit dans la cellule en **8**.
 
-## LE COMBAT FINAL ##
+Le Combat Final
+===============
 
 Les aventuriers arrivent sur une grande pièce (12/15m) remplie d'une lumière mais ils ne parviennent pas à identifier la source.
 Au fond de la pièce, face à la porte, le chat est acculé au mur, terrifié.
 
-.. rpg:character:: Firion
-   :ruleset: Dungeons & Dragons 5
-   
-   Un individu au tempérament hautain et à la préférence pour la solitude, affichant une fierté discrète qui le maintient en retrait des conversations et des interactions sociales.
-   Sa posture laisse entrevoir une confiance intérieure indéniable.
-
-   :con: 5
-
-### 1
+.. rubric:: 1
 
 **Lorant** est étalé contre le mur, inconscient.
 
-### 2
+.. rubric:: 2
 
 Trois prisonnier sont ligotés à des chaises ils sont inconsients et gémissent dans leur sommeil.
 Un tunnel de lumière à l'air "vivant" semble partir de leur corps pour se diriger vers le nécromancient.
 Sous chaque chaise un symbole composé de formes concentriques s'illumine.
 
-### 3
+.. rubric:: 3
 
 Le philactère.
 
@@ -465,7 +470,7 @@ Devant **Firin** se trouve une petite table sur laquelle est posée un petit obj
 C'est une boite.
 Un trait de lumière part du corps de **Firion** et le relie à la boite.
 
-### 4
+.. rubric:: 4
 
 **Firion** est debout devant la scène, il semble en transe mais pas innofensif.
 
@@ -476,7 +481,8 @@ Un jet de Perspicacité DD 15 réussi permet de comprendre que le phylactère do
 
 Après avoir vu les symboles, un jet de Perspicacité DD 15 permet de supposer que les prisonniers sont utiles à **Firion** tant qu'ils sont dessus.
 
-## Rencontre ##
+Rencontre
+---------
 
 Toute tentative furtive ratée d'approcher un prisonnier provoquera un sort lancé en réaction par Firion qui projettera le personnage visé contre un mur.
 Lui faisait subir 1d6 de dégats contondant par 3m de distance projettée.
@@ -488,7 +494,7 @@ Puis sa peau se met spontanement à brûler, réduisant le pauvre hommes en cend
 Toute tentative d'attaquer directement **Firion** est impossible.
 Elle se solvera par une onde de choc projettant tous les joueurs contre le mur, leur faisant subir 1d6 dégats contondant par 3m de distance projettée.
 
-## Mort de Firion##
+.. rubric:: Mort de Firion
 
 Le phylactère se détruit sans aucun effort dès lors que tous les prisonniers sont éloignés de leurs glyphes.
 
@@ -500,9 +506,10 @@ Tout est calme, **Firion** est mort corps et âme.
 Si les aventuriers fouillent le corps de **Firion** ils ne trouve rien d'autre que ses habits et un médaillon : une pierre rouge semblable à un rubis poli serti dans un métal noir.
 Le pendentif est légèrement chaud au toucher et émet une très légère lueur rouge.
 
-## CLÔTURE ##
+Clôture
+=======
 
-Quelle que soit la méthode utilisée les aventuriers rentrent au village.
+Quelle que soit la méthode utilisée les aventuriers sortent des ruines.
 A leur retour, ils sont accueillis par une garnison, accompagnés de **Boffre**.
 Le chef de la garnison les accuse de trahison envers l'Empire pour avoir kidnappé les habitants pour obtenir la récompense.
 Avant que les aventuriers ne puissent faire quelque chose ils sont mis aux arrêts.

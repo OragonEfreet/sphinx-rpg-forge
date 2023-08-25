@@ -1,6 +1,7 @@
 from collections import defaultdict
 from sphinx.domains import Index
 
+
 class ForgeIndex(Index):
     name = "forge"
     localname = "Forge Index"
@@ -17,9 +18,9 @@ class ForgeIndex(Index):
         # to group things:
         # name,subtype,docname,anchor,extra,qualifier,description
         for rs in rulesets:
-            content[rs.signature[0].lower()].append((
-                rs.signature, 0, rs.docname, rs.anchor, rs.typ, None, ""
-            ))
+            content[rs.signature[0].lower()].append(
+                (rs.signature, 0, rs.docname, rs.anchor, rs.typ, None, rs.ruleset or "")
+            )
 
         content = sorted(content.items())
         return content, True

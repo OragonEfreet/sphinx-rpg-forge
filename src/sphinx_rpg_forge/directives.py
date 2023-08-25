@@ -17,29 +17,29 @@ class ForgeObjectDescription(ObjectDescription):
         "ruleset": directives.unchanged_required,
     }
 
-    # def run(self) -> list[Node]:
-    #     super().run()
-    
+    def run(self) -> list[Node]:
+        nodes = super().run()
+
+        if hasattr(self, 'next_current_ruleset'):
+            self.env.get_domain(RPG_DOMAIN).set_current_ruleset(
+                self.env.docname, self.next_current_ruleset
+            )
+
+        return nodes
+
     def handle_signature(self, sig, signode):
         signode += addnodes.desc_name(text=sig)
 
-        # Set the current ruleset
-        if 'ruleset' in self.options:
-            domain = self.env.get_domain(RPG_DOMAIN)
-            old = domain.current_ruleset(self.env.docname)
-            domain.set_current_ruleset(self.env.docname, self.options['ruleset'])
-            new = domain.current_ruleset(self.env.docname)
-
-            print("=========")
-            print(f"While parsing '{sig}'")
-            print(f"Changed ruleset from '{old}' to '{new}'")
-            print("=========")
+        if self.objtype == "ruleset":
+            self.next_current_ruleset = sig
 
         return sig
 
     def add_target_and_index(self, name_cls, sig, signode):
         domain = self.env.get_domain(RPG_DOMAIN)
-        new_object = domain.add_object(self.objtype, sig, ruleset=self.options.get("ruleset", None))
+
+        ruleset = self.options.get("ruleset", domain.current_ruleset(self.env.docname))
+        new_object = domain.add_object(self.objtype, sig, ruleset=ruleset)
         signode["ids"].append(new_object.anchor)
 
     def get_object_type():

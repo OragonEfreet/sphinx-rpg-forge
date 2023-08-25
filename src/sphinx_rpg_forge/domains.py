@@ -44,14 +44,20 @@ class ForgeDomain(Domain):
         return self.data["current_ruleset"].get(docname, None)
 
     def set_current_ruleset(self, docname, ruleset):
-        self.data["current_ruleset"][docname] = ruleset
+        if ruleset is None:
+            if docname in self.data["current_ruleset"]:
+                del self.data["current_ruleset"][docname]
+        else:
+            self.data["current_ruleset"][docname] = ruleset
 
     def resolve_xref(self, env, fromdocname, builder, typ, target, node, contnode):
         match typ:
             case "ruleset":
                 try:
                     rs = next(
-                        rs for rs in self.get(RuleSetDirective.get_object_type()) if rs.signature == target
+                        rs
+                        for rs in self.get(RuleSetDirective.get_object_type())
+                        if rs.signature == target
                     )
                     return rs.make_refnode(builder, fromdocname, contnode)
                 except StopIteration:
@@ -59,7 +65,9 @@ class ForgeDomain(Domain):
             case "char":
                 try:
                     rs = next(
-                        rs for rs in self.get(CharacterDirective.get_object_type()) if rs.signature == target
+                        rs
+                        for rs in self.get(CharacterDirective.get_object_type())
+                        if rs.signature == target
                     )
                     return rs.make_refnode(builder, fromdocname, contnode)
                 except StopIteration:
@@ -74,6 +82,8 @@ class ForgeDomain(Domain):
         Returns the anchor to the object"""
         name = f"{typ}.{signature}"
         anchor = f"{typ}-{signature}"
-        new_object = ForgeObject(name, signature, typ, self.env.docname, anchor, ruleset)
+        new_object = ForgeObject(
+            name, signature, typ, self.env.docname, anchor, ruleset
+        )
         self.data["objects"].append(new_object)
         return new_object

@@ -2,7 +2,7 @@
 Demonstration
 #############
 
-:rpg:ruleset:`dnd5`
+.. rpg:ruleset:: Dungeons & Dragons 5
 
 .. toctree::
    :hidden:
