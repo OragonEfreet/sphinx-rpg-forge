@@ -79,12 +79,6 @@ Il s'agit d'un nain appelé :rpg:char:`Boffre`
 Complètement dépassé par les événements, il est traumatisé à l'idée d'endosser la responsabilité des enlèvements.
 C'est lui qui a lancé l'appel à volontaires et il sera capable d'accepter toute aide sans discuter.
 
-.. rpg:character:: Boffre
-
-   Bah.. un nain
-
-   :con: 5
-
 Déroulement
 -----------
 
@@ -426,16 +420,12 @@ Le chemin s'efface devant une porte de bois camouflée par la verdure au pied de
 Le Donjon
 =========
 
-Se reporter à la carte pour la description du terrain.
-
 Le donjon est une ancienne prison de sous-sol en ruines.
 Certains endroit sont bloqués par des éboulis.
+Après quelques mètres dans un couloir de pierre allant vers l'ouest, les aventuriers tombent dans une grande salle au plafond bas.
 
-Points d'intérêts:
-
-.. rubric:: 1
-
-Une table et un tabouret en bois solides. La table est marquée par le temps et les coups de couteau. 
+Près du mur nord se trouvent table et un tabouret en bois solides.
+La table est marquée par le temps et les coups de couteau. 
 
 .. tabs::
 
@@ -451,40 +441,62 @@ Une table et un tabouret en bois solides. La table est marquée par le temps et 
 
       Sur la table une assiette de sale, mais vidée récemment, repose à côté d'une dague.
 
-.. rubric:: 2, 3, 7
-
-Un aventurier mort.
-Il n'y a plus rien à récupérer.
-
-.. rubric:: 4
-
-Rencontre:
+La salle se prolonge vers l'ouest, répartissant 8 cellules, 4 de chaque côté.
 
 .. tabs::
 
    .. group-tab:: Avec Lorant
 
-      Trois créatures humanoïdes attendent le groupe, près à en découdre.
+      Après les cellules à l'ouest un petit couloir se termine par une porte.
+      Mais le passage est bloqué par 3 créatures humanoïdes, attendant le groupe.
       Il s'agit de zombies.
       Ils portent des vêtements divers et ne semblent donc pas faire partie du même groupe de leur vivant.
-      Première action de rencontre par :rpg:char:`Lorant` : fonce sur le groupe et projette un des morts-vivants vers le fond de la salle pour l'isoler.
-      Ils se placent en **10**.
 
-      Pendant le combat, :rpg:char:`Lorant` frappe contre un mur, provoquant un écroulement du plafond en 10, le laissant seul avec son zombie.
-      À partir de là :rpg:char:`Lorant` ne fait plus partie du groupe.
+      En voyant cela, Lorant fonce sur eux.
+      Mais ne mesurant pas sa force, son arme frappe un pilier mural et le plafond s'effondre, le séparant du reste du groupe.
+      Il isole avec lui un mort-vivant tandis que les deux autres tournent le dos aux aventuriers, attirés par les décombres.
 
-   .. group-tab:: Avec Lorant
+   .. group-tab:: Sans Lorant
 
-      Deux zombies tournent le dos au groupe, regardant :rpg:char:`Lorant` se battre en **10** avec un troisième. Soudain :rpg:char:`Lorant` frappe contre un mur et provoque un écroulement du plafond, l'isolant du reste de la pièce.
-      La rencontre avec les deux zombies peut commencer.
-      La surprise est possible.
+      Après les cellules à l'ouest se trouve un ébouli bloquant le passage.
+      Deux formes humanoïdes regardent les décombres en tournat le dos aux aventuriers.
 
-.. rubric:: 5
+La surprise sera systématique pour la rencontre avec ces les deux zombies.
 
-Les prisonniers sont là.
-Trois cages sont vides.
+.. rpg:character:: Réanimation de Firion
 
-Les aventuriers peuvent discuter avec les prisonniers et apprennent ceci :
+   *Mort-vivant de taille M, neutre mauvais*
+
+   :Classe d'armure: 7 
+   :Points de vie: 7 (2d6)
+   :Vitesse: 5 m
+
+   ======== ========= ========= ========= ======== ======== 
+    FOR      DEX       CON       INT       SAG      CHA     
+   ======== ========= ========= ========= ======== ======== 
+    8 (-1)   6 (-2)   15 (+3)    3 (-4)   6 (-2)   5 (-3)  
+   ======== ========= ========= ========= ======== ======== 
+
+   :Jets de sauvegarde: Sag +0
+   :Immunités aux dégats: poison
+   :Immunités aux états: empoisonné
+   :Sens: Vision dans le noir 18m, Perception passive 8
+   :Langues: Comprend les langues qu'il connaissais de son vivant mais ne peut pas parler
+   :Puissance: 1/4 (50 PX)
+
+   :Tenacité de mort-vivant: Si des dégâts font tomber la Réanimation à 0 points de vie, celui-ci doit effectuer un jet de sauvegarde de Consistution DD5 + les dégats subis, sauf en cas de dégâts radiants ou coup critique.
+   En cas de réussite, il tombe à 1 point de vue à la place.
+
+   .. rubric:: Actions
+
+   :Coup: Attaque au corps à corps avec une arme:: +3 au toucher, allong 1,50m une cible.
+   Touché 4 (1d6+1) dégâts contondants.
+
+Les trois premières cellules de gauche sont ouvertes et vides à l'exception d'un cadavre dans la première.
+Il n'y a plus rien à récupérer sur lui.
+
+Dans la dernière cellule de gauche se trouve un groupe de prisonniers enfermés.
+Les aventuriers peuvent discuter avec eux et apprennent ceci :
 
 * Les gobelins sont menés par un sorcier Elfe appelé :rpg:char:`Firion`
 * Ils n'ont aucune idée pour les zombies mais l'un d'eux ressemblait dur comme fer à une personne qui avait tenté auparavant de les sauver.
@@ -492,18 +504,19 @@ Les aventuriers peuvent discuter avec les prisonniers et apprennent ceci :
 * Il y a une vingtaine de minutes, :rpg:char:`Firion` a pris trois personnes avec lui sans expliquer pourquoi.
 * Les gobelins sont mauvais mais pas cruels.
 
-.. rubric:: 6
-
-Un cadavre est attaché par la cheville et une chaine reliée au fond du mur de la cellule.
+Dans la première cellule de droite, un cadavre est attaché par la cheville et une chaine reliée au fond du mur de la cellule.
 Si les aventuriers s'approchent, le cadavre attrape le pied du plus proche et tente de le renverser (Sauvegarde Dex 10).
-Un autre sort de l'ombre et s'apprête à attaquer à son tour.
 
-Au début de cette rencontre le premier zombie et potentiellement un aventurier sont à terre.
+La porte de la seconde cellule de droite est bloquée par des débris et un bois gonflé.
+Pour l'ouvrir il faudra la forcer Force DD 20.
 
-.. rubric:: 8
+La troisième cellule de droite est ouverte mais entièrement vide à l'exception d'un chat noir à la queue blanche.
+En voyant les aventuriers, il s'enfuit à travers les barreaux et entre dans la dernière cellule.
 
-Un passage est caché sous le lit.
-Il mène à l'ancienne salle des pièces à conviction, les objets confisqués aux anciens prisonniers.
+La dernière cellule est ouverte.
+Derrière la paillasse, le mur est défoncé et il est possible de passer aisément dans une pièce adjacente.
+
+Il s'agit de l'ancienne salle des pièces à conviction, les objets confisqués aux anciens prisonniers.
 La pièce contient des étagères presque toutes vides.
 En fouillant les caisses et les lieux, les aventuriers peuvent quand même trouver :
 
@@ -513,27 +526,11 @@ En fouillant les caisses et les lieux, les aventuriers peuvent quand même trouv
 * Une épée de fer
 * Une vieille cape miteuse mais encore utilisable.
 
-.. rubric:: 9
+Le mur sur de cette pièce affiche une porte entre-ouverte.
+Un halo de lumière bleue semble émaner du couloir de l'autre côté de la porte.
 
-La porte est bloquée par des débris et un bois gonflé.
-Pour l'ouvrir il faudra la forcer Force DD 20.
-
-.. rubric:: 10
-
-Le troisième gobelin mort gît au sol.
-
-.. rubric:: 11
-
-La porte est défoncée.
-
-.. rubric:: 12
-
-Voir partie suivante.
-
-.. rubric:: 13
-
-Un chat noir au pinceau blanc apparait devant les aventuriers.
-Pris de peur il s'enfuit dans la cellule en **8**.
+Lorsque les aventuriers passent la porte, ils peuvent voir les décombres à l'est derrière une autre porte ouverte ainsi qu'un zombie à terre.
+Le couloir continue vers l'ouest pour donner immédiatement sur une porte entièrement ouverte.
 
 Le Combat Final
 ===============
@@ -541,24 +538,15 @@ Le Combat Final
 Les aventuriers arrivent sur une grande pièce (12/15m) remplie d'une lumière mais ils ne parviennent pas à identifier la source.
 Au fond de la pièce, face à la porte, le chat est acculé au mur, terrifié.
 
-.. rubric:: 1
-
-:rpg:char:`Lorant` est étalé contre le mur, inconscient.
-
-.. rubric:: 2
+:rpg:char:`Lorant` est étalé contre un mur, inconscient.
 
 Trois prisonnier sont ligotés à des chaises ils sont inconsients et gémissent dans leur sommeil.
 Un tunnel de lumière à l'air "vivant" semble partir de leur corps pour se diriger vers le nécromancient.
 Sous chaque chaise un symbole composé de formes concentriques s'illumine.
 
-.. rubric:: 3
-
 Devant :rpg:char:`Firion` se trouve un petit autel d'obsidienne, sur lequel est posée une petite boite en bois.
 La boite est fermée et est ornée de runes inconnues.
 Un trait de lumière part du corps de :rpg:char:`Firion` et le relie à la boite.
-
-.. rubric:: 4
-
 :rpg:char:`Firion` est debout devant la scène, il semble en transe mais pas innofensif.
 
 Un jet d'arcane réussi DD 20 permettra aux aventuriers de comprendre que :rpg:char:`Firion` est un nécromancien et qu'il aspire les âmes des prisonniers.
