@@ -38,6 +38,9 @@ L'aventure prend fin ici sous forme de cliffhanger.
 Le Village de Harald
 ====================
 
+.. image:: harald_place.png
+   :target: /_images/harald_place.png
+
 Harald est un village modeste de quelques centaines d'habitants seulement.
 Avant le conflit frontalier, il servait principalement d'étape pour les voyageurs.
 L'économie du village tourne principalement autour de la pêche, de l'écurie et de l'auberge.
@@ -59,6 +62,11 @@ L'action intiale de l'aventure se déroule sur cette place.
 L'auberge
 ---------
 
+.. image:: harald_tavern.png
+   :target: /_images/harald_tavern.png
+   :align: right
+   :width: 50%
+
 L'auberge sert aussi de taverne, de restaurant et de relais pour les voyageurs.
 L'aubergiste vend des repas.
 L'auberge est tenue par :rpg:char:`Hesjen` une cuisinière qui, à force d'écouter ses client parler, sait tout de la région.
@@ -73,6 +81,12 @@ Il peut paraître bourru au premier abord, mais en réalité il est tout simplem
 
 La Maison de Ville
 ------------------
+
+.. image:: harald_office.png
+   :target: /_images/harald_office.png
+   :align: left
+   :width: 50%
+
 
 C'est le nom donné au domicile du représentant Impérial qui vit ici.
 Il s'agit d'un nain appelé :rpg:char:`Boffre`
@@ -170,6 +184,11 @@ Avant la Forêt
 Le voyage avant la forêt est tranquille et ne représente aucun danger particulier.
 Dans un premier temps les aventuriers longent la route puis devront la quittent au croisement pour continuer vers l'ouest.
 
+.. image:: tower.png
+   :target: /_images/tower.png
+   :align: left
+   :width: 50%
+
 A mi-chemin les joueurs aperçoivent les ruines d'une ancienne tour de garde abandonnée.
 Cette tour sert de poste avancé pour des gobelins.
 Elle est actuellement occupée par un gobelin.
@@ -214,6 +233,10 @@ Mais chaque heure peut provoquer une rencontre avec un gobelin solitaire.
 La Forêt
 ========
 
+.. image:: forest_entrance.png
+   :target: /_images/forest_entrance.png
+   :align: right
+
 Si les aventuriers possèdent des chevaux ils devront les attacher ici ou les laisser partir (ils retourneront au village par eux-mêmes.).
 
 La forêt est banale, un petit sentier à peine assez large pour une personne commence devant les aventuriers et termine au village gobelin.
@@ -227,13 +250,24 @@ Durant le trajet les aventuriers ont la possibilité de passer par le chemin ou 
     + Intelligence (Investigation) `DD15`
     + `2d10` dégats perforants
 
+.. image:: bivouac.png
+   :target: /_images/bivouac.png
+   :align: right
+   :width: 50%
+
 Si les Aventuriers se reposent:
 
     * Sur la route, une rencontre systématique avec un gobelin, par heure, sera faite
     * En dehors de la route, une rencontre aléatoire sur (`d20=>18`) `TRA0` est possible
 
+
 Lorant
 ------
+
+.. image:: forest.png
+   :target: /_images/forest.png
+   :align: left
+   :width: 50%
 
 A tout moment durant la traversée de la forêt, les aventuriers entendent des bruits.
 Un test de Sagesse (Perception) leur permet di'dentifier les bruits comme celui d'un combat.
@@ -327,6 +361,11 @@ La configuration dépend de la présence ou non de :rpg:char:`Lorant` au sein du
 
       Si les aventuriers parviennent à taire le chien, le chef gobelin arrive sans se douter de leur présence et, choqué, offrira un avantage de surprise au premier round.
 
+.. image:: goblin_cages.png
+   :target: /_images/goblin_cages.png
+   :width: 50%
+   :align: center
+
 .. rpg:character:: Chef Gobelin
 
    *Humanoïde (gobelinoïde) de taille P, neutre mauvais*
@@ -399,6 +438,11 @@ Si les aventuriers laissent le gobelin partir, il s'enfuit et disparaît dans la
 L'Entrée du Donjon
 ==================
 
+.. image:: forest_door.png
+   :target: /_images/forest_door.png
+   :width: 50%
+   :align: center
+
 Au bout de vingt minutes de marche sans aucune rencontre quelque, les arbres s'éclaircicent pour laisser place à une petite colline surmontées de ruines.
 
 Le chemin s'efface devant une porte de bois camouflée par la verdure au pied de la colline.
@@ -420,6 +464,11 @@ Le chemin s'efface devant une porte de bois camouflée par la verdure au pied de
 
 Le Donjon
 =========
+
+.. image:: dungeon_corridor.png
+   :target: /_images/forest_door.png
+   :width: 50%
+   :align: right
 
 Le donjon est une ancienne prison de sous-sol en ruines.
 Certains endroit sont bloqués par des éboulis.
@@ -536,6 +585,11 @@ Le couloir continue vers l'ouest pour donner immédiatement sur une porte entiè
 Le Combat Final
 ===============
 
+.. image:: dungeon_firion.png
+   :target: /_images/dungeon_firion.png
+   :width: 50%
+   :align: right
+
 Les aventuriers arrivent sur une grande pièce (12/15m) remplie d'une lumière mais ils ne parviennent pas à identifier la source.
 Au fond de la pièce, face à la porte, le chat est acculé au mur, terrifié.
 
@@ -584,6 +638,9 @@ Le pendentif est légèrement chaud au toucher et émet une très légère lueur
 
 Clôture
 =======
+
+.. image:: forest_arrest.png
+   :target: /_images/forest_arrest.png
 
 Quelle que soit la méthode utilisée les aventuriers sortent des ruines.
 A leur retour, ils sont accueillis par une garnison, accompagnés de **Boffre**.
