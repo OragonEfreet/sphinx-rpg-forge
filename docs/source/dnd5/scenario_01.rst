@@ -100,7 +100,7 @@ Ils peuvent évoquer la situation avec les gobelins.
 Certains remercieront les aventuriers pour leur présence.
 
 Si un aventurier se présente à n'importe quel habitant, celui-ci peut vouloir l'aider à la demande de l'aventurier.
-Sur un jet de :rpg:char:`CHAR` réussi, l'anventurier obtient (:rpg:char:`1d6`) :
+Sur un jet de :rpg:char:`CHAR` réussi (DD15), l'anventurier obtient (:rpg:char:`1d6`) :
 
 +-----------------+--------------------+
 | :rpg:char:`1d6` |              Objet |
@@ -130,7 +130,6 @@ Mais si les aventuriers le mettent à l'aise (:rpg:char:`CHAR`), il leur propose
 Selon l'orientation de la conversation, les aventuriers peuvent obtenir quelques informations peu ou prou utiles :
 
 * Les gobelins ne sont que rarement une menace en petit nombre.
-* Selon elle un village gobelins ne peut pas apparaître du jour au lendemain, pourtant c'est l'impression qu'ils donnent. Selon elle soit ils ont été déplacés, soit quelque chose les a changé. Dans les deux cas ce n'est pas rassurant.
 * La guerre est à son plein à la frontière. Même si la garnison tient bon, les orcs tentent de passer en force. Mais la guerre, c'est mauvais pour les affaires.
 * :rpg:char:`Lesan` possède un frère qui s'est fait enlevé par les gobelins.
 * Le comte a l'intention de doubler la quantité d'hommes à la frontière pour la protéger.
@@ -301,9 +300,9 @@ La configuration dépend de la présence ou non de :rpg:char:`Lorant` au sein du
       Il est presque comateux.
       
       La tente au sud-ouest contient quatre lits.
-      Deux sont occupés par des gobelins endormis.
+      L'un est occupé par un gobelin endormi.
       
-      Dans tous les cas, si les gobelins sont alertés d'une manière ou d'une autre, les 4 gobelins les attaquent.
+      Dans tous les cas, si les gobelins sont alertés d'une manière ou d'une autre, les 3 gobelins les attaquent.
       Le gobelin ivre reste inconscient de la situation.
       
       Une fois le combat terminé, le chef gobelins apparaît, venant le l'ouest.
@@ -313,7 +312,7 @@ La configuration dépend de la présence ou non de :rpg:char:`Lorant` au sein du
 
       A l'ouest au fond du camp se trouve un molosse attaché qui aboie en continu.
       
-      Au centre du camp, deux gobelins sont à terre.
+      Au centre du camp, un gobelin est à terre.
       
       La tente au nord est remplie de petites cages, toutes ouvertes.
       Un gobelin mort gît au sol à l'intérieur.
@@ -390,9 +389,11 @@ La configuration dépend de la présence ou non de :rpg:char:`Lorant` au sein du
 Dans les deux cas, une fois le chef gobelin vaincu, il demande la pitié aux aventuriers en échange d'informations.
 Si les aventuriers le laissent parler, ils apprennent que les gobelins sont esclaves d'un certain :rpg:char:`Firion` qui les manipule. :rpg:char:`Firion` a posé une malédiction sur une relique chère à la culture gobeline et elle sera détruite s'ils ne l'obéissent pas.
 Si les aventuriers en demandent plus, le gobelin peut leur donner les informations suivantes:
-- :rpg:char:`Firion` a forcé les gobelins à kidnapper les humains
-- Le nécromant se terre dans l'ancienne "prison humaine"
-- Il fait quelque chose avec les âmes des humains
+
+* :rpg:char:`Firion` a forcé les gobelins à kidnapper les humains
+* Le nécromant se terre dans l'ancienne "prison humaine"
+* Il fait quelque chose avec les âmes des humains
+
 Si les aventuriers laissent le gobelin partir, il s'enfuit et disparaît dans la forêt.
 
 L'Entrée du Donjon
