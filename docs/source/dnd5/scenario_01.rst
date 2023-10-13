@@ -191,44 +191,17 @@ Dans un premier temps les aventuriers longent la route puis devront la quittent 
 
 A mi-chemin les joueurs aperçoivent les ruines d'une ancienne tour de garde abandonnée.
 Cette tour sert de poste avancé pour des gobelins.
-Elle est actuellement occupée par un gobelin.
-S'il fait nuit, le gobelin est autour d'un feu.
+Elle est actuellement occupée par `deux gobelin <https://www.aidedd.org/dnd/monstres.php?vf=gobelin>`__ et `un molosse <https://www.aidedd.org/dnd/monstres.php?vf=molosse>`__.
+**S'il fait nuit**, les gobelins sont autour d'un feu.
 Le feu fait suffisamment de fumée et de lumière pour être aperçu par les aventurier depuis une grande distance.
 Ce qui laisse aux aventuriers la possibilité d'approcher furtivement.
-S'il fait jour le gobelins est sur le qui vive et aperçoit les aventuriers.
+**S'il fait jour** les gobelins sont sur le qui vive et aperçoivent les aventuriers.
 Dans tous les cas l'issue est un combat.
 
-Si les aventuriers fouillent le gobelins ils trouveront une demie ration et un morceau de papier sur lequel il est écrit "Foutez moi la paix".
+Si les aventuriers fouillent les gobelins ils trouveront un de papier sur lequel il est écrit "Foutez moi la paix" ainsi que les récompenses habituelles.
 
 Les aventuriers peuvent décider de se reposer ici.
-Mais chaque heure peut provoquer une rencontre avec un gobelin solitaire.
-
-.. rpg:character:: Gobelin
-
-   *Humanoïde (gobelinoïde) de taille P, neutre mauvais*
-
-   :Classe d'armure: 15 (armure de cuir, bouclier)
-   :Points de vie: 7 (2d6)
-   :Vitesse: 9 m
-
-   ======== ========= ========= ========= ======== ======== 
-    FOR      DEX       CON       INT       SAG      CHA     
-   ======== ========= ========= ========= ======== ======== 
-    8 (-1)   14 (+2)   10 (+0)   10 (+0)   8 (-1)   8 (-1)  
-   ======== ========= ========= ========= ======== ======== 
-
-   :Compétences: Discrétion +6
-   :Sens: vision dans le noir 18 m, Perception passive 9
-   :Langues: commun, gobelin
-   :Puissance: 1/4 (50 PX)
-
-   :Fuite agile: Le gobelin peut Se cacher ou Se désengager à chacun de ses tours en utilisant une action bonus.
-
-   .. rubric:: Actions
-
-   :Cimeterre: Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts tranchants.
-   :Arc court: Attaque à distance avec une arme : +4 au toucher, portée 24/96 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.
-
+Mais chaque heure provoquera une rencontre avec 1d4-1 (minimum 1) gobelins.
 
 La Forêt
 ========
@@ -243,7 +216,7 @@ La forêt est banale, un petit sentier à peine assez large pour une personne co
 
 Durant le trajet les aventuriers ont la possibilité de passer par le chemin ou de s'en éloigner:
 
-* S'ils restent sur la route, ils sous soumis à une rencontre aléatoire de la table `TRA0`, chaque heure (`d20=>18`)
+* S'ils restent sur la route, ils sous soumis à une rencontre avec 1d4-2 `gobelins <https://www.aidedd.org/dnd/monstres.php?vf=gobelin>`__ chaque demie-heure (`d20=>18`)
 
 * S'ils s'éloignent de la route, ils ont chaque heure une chance unique de tomber sur un piège Fosse disimulée hérissée de pointe
     + Sagesse (Perception) `DD 15` pour remarquer qu'il n'y a pas de traces de pas
@@ -257,7 +230,7 @@ Durant le trajet les aventuriers ont la possibilité de passer par le chemin ou 
 
 Si les Aventuriers se reposent:
 
-    * Sur la route, une rencontre systématique avec un gobelin, par heure, sera faite
+    * Sur la route, une rencontre systématique avec deux `gobelins <https://www.aidedd.org/dnd/monstres.php?vf=gobelin>`__, par heure, sera faite
     * En dehors de la route, une rencontre aléatoire sur (`d20=>18`) `TRA0` est possible
 
 
@@ -270,8 +243,8 @@ Lorant
    :width: 50%
 
 A tout moment durant la traversée de la forêt, les aventuriers entendent des bruits.
-Un test de Sagesse (Perception) leur permet di'dentifier les bruits comme celui d'un combat.
-Si les aventuriers décident d'enquêter ils atteindront une clairière où :rpg:char:`Lorant` se bat contre un gobelin et un molosse.
+Un test de Sagesse (Perception) leur permet d'identifier les bruits comme celui d'un combat.
+Si les aventuriers décident d'enquêter ils atteindront une clairière où :rpg:char:`Lorant` se bat contre un `gobelin <https://www.aidedd.org/dnd/monstres.php?vf=gobelin>`__ et un `un molosse <https://www.aidedd.org/dnd/monstres.php?vf=molosse>`__.
 Un autre gobelin, mort, gît à leurs pieds.
 :rpg:char:`Lorant` n'est fondamentalement pas en difficulté mais ses frasques le décredibilisent.
 Toute tentative d'approche furtive se soldera par un échec puisque :rpg:char:`Lorant`, les remarquant, les appelera avec bruit pour leur demander de l'aide.
@@ -306,7 +279,7 @@ Il est composé de trois grandes tentes faites de peaux diverses.
 
 Une tente au nord, plus grande que les autres.
 Deux tentes au sud.
-Au centre les cendres d'un grand feu de camp, des tabourets et quelques ustentiles divers trônent sous une broche énorme broche à viande.
+Au centre les cendres d'un grand feu de camp, des tabourets et quelques ustentiles divers trônent sous une énorme broche à viande.
 
 A l'ouest le chemin semble continuer, s'enfonçant dans la forêt
 
@@ -365,65 +338,6 @@ La configuration dépend de la présence ou non de :rpg:char:`Lorant` au sein du
    :target: /_images/goblin_cages.png
    :width: 50%
    :align: center
-
-.. rpg:character:: Chef Gobelin
-
-   *Humanoïde (gobelinoïde) de taille P, neutre mauvais*
-
-   :Classe d'armure: 17 (armure de cuir, bouclier)
-   :Points de vie: 21 (6d6)
-   :Vitesse: 9 m
-
-   ======== ========= ========= ========= ======== ======== 
-    FOR      DEX       CON       INT       SAG      CHA     
-   ======== ========= ========= ========= ======== ======== 
-    10 (+0)  14 (+2)   10 (+0)   10 (+0)   8 (-1)   10 (+0)  
-   ======== ========= ========= ========= ======== ======== 
-
-   :Compétences: Discrétion +6
-   :Sens: vision dans le noir 18 m, Perception passive 9
-   :Langues: commun, gobelin
-   :Puissance: 1 (200 PX)
-
-   :Fuite agile: Le gobelin peut Se cacher ou Se désengager à chacun de ses tours en utilisant une action bonus.
-
-   .. rubric:: Actions
-
-   :Attaques multiples: Le gobelin effectuve deux attaques avec le cimeterre. La deuxième attaque a un désavantage.
-   :Cimeterre: Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts tranchants.
-   :Javeline: Attaque au corps à corps ou à distance avec une arme : +2 au toucher, allonge 1,50m ou portée 9/36m, une cible. Touché : 3 (1d6) dégâts perforants.
-
-   .. rubric:: Réactions
-
-   :Attaque redirigée: Lorsqu'une créature, que le gobelin peut voir, le cible avec une attaque, le gobelin choisir un autre gobelin situé à 1.50 mètre ou moins de lui. Les deux gobelins échangent leur place et le gobelin choisi devient la nouvelle cible de l'attaque.
-
-
-.. rpg:character:: Molosse
-
-   *Bête de taille M, sans alignement*
-
-   :Classe d'armure: 12 
-   :Points de vie: 5 (1d6 + 1)
-   :Vitesse: 12 m
-
-   ======== ========= ========= ========= ======== ======== 
-    FOR      DEX       CON       INT       SAG      CHA     
-   ======== ========= ========= ========= ======== ======== 
-    13 (+1)  14 (+2)   12 (+1)   3 (-4)    12 (+1)  7 (-2)  
-   ======== ========= ========= ========= ======== ======== 
-
-   :Compétences: Perception +3
-   :Sens: Perception passive 13
-   :Puissance: 1/6 (25 PX)
-
-   :Odorat et ouïe aiguisées: Le molosse a un avantage aux jets de Sagesse (Perception) basés sur l'odorat et l'ouïe.
-
-   .. rubric:: Actions
-
-   :Morsure: *Attaque au corps à corps avec une arme*: +3 au toucher, allonge 1.50m, une cible.
-             Touché: 4 (1d6 +1) dégâts perforants.
-             Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 11 pour ne pas tomber à terre.
-
 
 Dans les deux cas, une fois le chef gobelin vaincu, il demande la pitié aux aventuriers en échange d'informations.
 Si les aventuriers le laissent parler, ils apprennent que les gobelins sont esclaves d'un certain :rpg:char:`Firion` qui les manipule. :rpg:char:`Firion` a posé une malédiction sur une relique chère à la culture gobeline et elle sera détruite s'ils ne l'obéissent pas.
@@ -485,8 +399,6 @@ La table est marquée par le temps et les coups de couteau.
       Une dague est plantée dans le plus gros morceau.
       La viande peut être consommée. Malgré un goût très fort elle ne semble pas immonde. La consommation n'apporte aucun avantage ou inconvénient.
 
-      Si les aventuriers décident de forcer la porte (DD15), le gobelin derrière recevras le choc directement et sera définitivement assomé.
-
    .. group-tab:: Sans  Lorant
 
       Sur la table une assiette de sale, mais vidée récemment, repose à côté d'une dague.
@@ -498,49 +410,23 @@ La salle se prolonge vers l'ouest, répartissant 8 cellules, 4 de chaque côté.
    .. group-tab:: Avec Lorant
 
       Après les cellules à l'ouest un petit couloir se termine par une porte.
-      Mais le passage est bloqué par 3 créatures humanoïdes, attendant le groupe.
-      Il s'agit de zombies.
+      Mais le passage est bloqué par 4 créatures humanoïdes, attendant le groupe.
+      Il s'agit de `zombies <https://www.aidedd.org/dnd/monstres.php?vf=zombi>`__.
       Ils portent des vêtements divers et ne semblent donc pas faire partie du même groupe de leur vivant.
 
       En voyant cela, Lorant fonce sur eux.
       Mais ne mesurant pas sa force, son arme frappe un pilier mural et le plafond s'effondre, le séparant du reste du groupe.
-      Il isole avec lui un mort-vivant tandis que les deux autres tournent le dos aux aventuriers, attirés par les décombres.
+      Il isole avec lui un mort-vivant tandis que les trois autres tournent le dos aux aventuriers, attirés par les décombres.
 
    .. group-tab:: Sans Lorant
 
       Après les cellules à l'ouest se trouve un ébouli bloquant le passage.
-      Deux formes humanoïdes regardent les décombres en tournat le dos aux aventuriers.
+      Trois formes humanoïdes regardent les décombres en tournat le dos aux aventuriers.
+
+      Il s'agit de `zombies <https://www.aidedd.org/dnd/monstres.php?vf=zombi>`__.
+      Ils portent des vêtements divers et ne semblent donc pas faire partie du même groupe de leur vivant.
 
 La surprise sera systématique pour la rencontre avec ces les deux zombies.
-
-.. rpg:character:: Réanimation de Firion
-
-   *Mort-vivant de taille M, neutre mauvais*
-
-   :Classe d'armure: 7 
-   :Points de vie: 7 (2d6)
-   :Vitesse: 5 m
-
-   ======== ========= ========= ========= ======== ======== 
-    FOR      DEX       CON       INT       SAG      CHA     
-   ======== ========= ========= ========= ======== ======== 
-    8 (-1)   6 (-2)   15 (+3)    3 (-4)   6 (-2)   5 (-3)  
-   ======== ========= ========= ========= ======== ======== 
-
-   :Jets de sauvegarde: Sag +0
-   :Immunités aux dégats: poison
-   :Immunités aux états: empoisonné
-   :Sens: Vision dans le noir 18m, Perception passive 8
-   :Langues: Comprend les langues qu'il connaissais de son vivant mais ne peut pas parler
-   :Puissance: 1/4 (50 PX)
-
-   :Tenacité de mort-vivant: Si des dégâts font tomber la Réanimation à 0 points de vie, celui-ci doit effectuer un jet de sauvegarde de Consistution DD5 + les dégats subis, sauf en cas de dégâts radiants ou coup critique.
-   En cas de réussite, il tombe à 1 point de vue à la place.
-
-   .. rubric:: Actions
-
-   :Coup: Attaque au corps à corps avec une arme:: +3 au toucher, allong 1,50m une cible.
-   Touché 4 (1d6+1) dégâts contondants.
 
 Les trois premières cellules de gauche sont ouvertes et vides à l'exception d'un cadavre dans la première.
 Il n'y a plus rien à récupérer sur lui.
@@ -570,7 +456,7 @@ Il s'agit de l'ancienne salle des pièces à conviction, les objets confisqués 
 La pièce contient des étagères presque toutes vides.
 En fouillant les caisses et les lieux, les aventuriers peuvent quand même trouver :
 
-* Un bâton de branches noueuses qui, après identification, ne s'avère n'être rien de particulier.
+* Un bâton de branches noueuses qui, après identification, ne s'avère être un bâton de branches noueuses.
 * Une flasque vide
 * Une flasque de verre contenant un liquide inconnu. La flasque est fermement scellé. Si cassée le contact de l'air et du liquide provoque une lumière aveuglante qui incapacite toute personne dans un rayon de dix mètre jusqu'à la fin du round sauf si la personne a protégé ses yeux, ou regardait dans la direction opposée à la fiole.
 * Une épée de fer
@@ -649,6 +535,6 @@ Avant que les aventuriers ne puissent faire quelque chose ils sont mis aux arrê
 Fin de l'aventure.
 
 Expérience gagnée:
-- 800 xp à se partager
+- Expérience des rencontres
 - 25xp par joueur par prisonnier vivant après le rituel.
 
